@@ -1,12 +1,13 @@
-import { getFeaturedEvents } from '../dummy-data'
-import EventList from '../components/events/EventList'
+import { getFeaturedEvents } from "../dummy-data";
+import EventList from "../components/events/EventList";
+import { Fragment } from "react";
 
 function HomePage() {
     return (
-        <div>
+        <Fragment>
             <EventList items={getFeaturedEvents()} />
-        </div>
-    )
+        </Fragment>
+    );
 }
 
-export default HomePage
+export default HomePage;
